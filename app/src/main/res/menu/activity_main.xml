@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <item
+        android:id="@+id/itm_create_routine"
+        android:title="צור רוטינה" />
+
+    <item
+        android:id="@+id/itm_edit_routine"
+        android:title="ערוך רוטינה" />
+
+    <item
+        android:id="@+id/itm_edit_prev_event"
+        android:title="ערוך הארוע הקודם" />
+
+    <item
+        android:id="@+id/itm_edit_next_event"
+        android:title="ערוך הארוע הבא" />
+
+    <item
+        android:id="@+id/itm_edit_event_time"
+        android:title="ערוך מועד הארוע" />
+
+</menu>

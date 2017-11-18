@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Rutina</string>
+
+    <string-array name="time_unit_types">
+        <item>ימים</item>
+        <item>שבועות</item>
+        <item>חודשים</item>
+        <item>שנים</item>
+    </string-array>
+
+    <string-array name="num_time_units">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>s
+
+</resources>

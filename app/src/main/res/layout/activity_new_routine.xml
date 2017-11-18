@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rutina_sdk17.NewRoutineActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txv_routine_title"
+                android:text="רוטינה:"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"/>
+
+            <EditText
+                android:id="@+id/edt_routine_name"
+                android:textSize="20dp"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txv_routine_title"
+                android:gravity="right"/>
+
+            <TextView
+                android:id="@+id/txv_repeat_every"
+                android:text="חזור כל"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/edt_routine_name"
+                android:layout_alignParentRight="true"/>
+
+            <Spinner
+                android:id="@+id/spn_num_time_units"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_routine_name"
+                android:layout_toLeftOf="@id/txv_repeat_every"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp" />
+
+            <Spinner
+                android:id="@+id/spn_time_unit_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_routine_name"
+                android:layout_toLeftOf="@id/spn_num_time_units"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="bottom" >
+
+            <Button
+                android:id="@+id/btn_create_routine"
+                android:text="ביטול"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

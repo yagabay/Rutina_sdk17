@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rutina_sdk17.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutDirection="rtl" >
+
+                <!-- headers bar -->
+
+                <TextView
+                    android:text="הרוטינה"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/table_header_cell_background"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="האירוע הקודם"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/table_header_cell_background"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="האירוע הבא"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/table_header_cell_background"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutDirection="rtl" >
+
+                <!-- routine names -->
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@color/white" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:clickable="true"
+                        android:onClick="startEditRoutineActivity" >
+
+                        <TextView
+                            android:text="רופא עור"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/table_data_cell_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" >
+
+                        <TextView
+                            android:text="טסט לאוטו"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/table_data_cell_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- prev events -->
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:clickable="true"
+                        android:onClick="startEditPrevEventActivity" >
+
+
+                        <TextView
+                            android:text="-"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/table_data_cell_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" >
+
+                        <TextView
+                            android:text="8.7.17"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/table_data_cell_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- next events -->
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:clickable="true"
+                        android:onClick="startEditNextEventActivity" >
+
+                        <TextView
+                            android:text="-"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/table_data_cell_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" >
+
+                        <TextView
+                            android:text="11.2.18"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/table_data_cell_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 'add routine' button -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:text="צור רוטינה"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:background="@color/blue"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:onClick="startCreateRoutineActivity" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
