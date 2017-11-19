@@ -7,6 +7,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
+import android.widget.AdapterView;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
         getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
         setContentView(R.layout.activity_main);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        final RoutinesBaseAdapter routineBaseAdapter = new RoutinesBaseAdapter(this, generateRoutinesList());
+        ListView lsvRoutines = findViewById(R.id.lsv_routines);
+        lsvRoutines.setAdapter(routineBaseAdapter);
     }
 
     @Override
@@ -82,4 +89,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    private ArrayList<Routine> generateRoutinesList(){
+        ArrayList<Routine> routines = new ArrayList<>();
+        routines.add(new Routine("רופא עור", "1.1.17", "1.6.17"));
+        routines.add(new Routine("טסט לאוטו", "1.5.17", "1.6.18"));
+        return routines;
+    }
 }

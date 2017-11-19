@@ -7,23 +7,19 @@
             android:shape="rectangle">
 
             <solid
-                android:color="@color/lightBrown" />
+                android:color="@color/white" />
 
         </shape>
 
     </item>
 
     <item
-        android:left="1dp"
-        android:right="1dp"
-        android:top ="1dp"
-        android:bottom="1dp">
-
+        android:left="2dp" >
         <shape
             android:shape="rectangle">
 
             <solid
-                android:color="@color/white" />
+                android:color="#A349A4" />
 
         </shape>
 
